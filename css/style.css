@@ -35,7 +35,7 @@ body{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   opacity: 0.7;
   transition: 0.5s;
   padding: 10px;
@@ -72,7 +72,7 @@ body{
   bottom: -12px;
   left: -12px;
   background: lightgoldenrodyellow;
-  border-radius: 50%;
+  border-radius: 65%;
   color: lightcoral;
   padding: 5px;
   font-size: 15px;
@@ -100,4 +100,64 @@ body{
 .header-heading span{
   color: rgb(235, 163, 55);
   text-shadow: 5px 5px 10px crimson;
+}
+
+/* Best Selling Products Section */
+.best-selling-products-section{
+  
+  padding: 60px 5vw;
+}
+
+.product-title{
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card{
+  height: 300px;
+  width: 300px;
+  border: 10px solid #BD4DA3;
+  border-radius: 6px;
+  background: #D29DC9;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.product-card:nth-child(even){
+  border-color: #156BCA;
+  background: #548BE0;
+}
+
+.product-img{
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.product-name{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  text-transform: capitalize;
+  font-family: 'lato', serif;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product-card:hover .product-name{
+  opacity: 1;
+}
+
+.product-card:hover .product-img{
+  opacity: 0.5;
 }
