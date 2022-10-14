@@ -1,3 +1,9 @@
+/* 
+#D9FEFC       #9CFE76            #125052       #542543
+#9FDF65       #8A5FAB            #D299B4       #2807C0
+#1AD4C6       #2563AB            #F2608F       #64849A
+#0BA9F3       #8DAEB2            #CAE2D2       #7DDA1F
+*/
 *{
   margin: 0;
   padding: 0;
@@ -104,7 +110,7 @@ body{
 
 /* Best Selling Products Section */
 .best-selling-products-section{
-  
+  position: relative;
   padding: 60px 5vw;
 }
 
@@ -149,7 +155,7 @@ body{
   font-size: 25px;
   text-transform: capitalize;
   font-family: 'lato', serif;
-  color: #fff;
+  color: cornsilk;
   opacity: 0;
   transition: 0.5s;
 }
