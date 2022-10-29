@@ -209,13 +209,14 @@ body {
   background-color: #f0f2f5;
   height: 100%;
   width: 50%;
+  display: block;
   margin-left: auto;
   padding: 10px;
   text-align: center;
-  border-radius:  50px/15px;
-  /* border-top-right-radius: 15px;
+  /* border-radius:  50px/15px; */
+  border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 0px 0px 5px 0px rgb(0 0 0 /40%); */
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 /40%);
 }
 
 .section-title{
@@ -238,4 +239,60 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   margin-top: 20px;
+}
+
+/* Images Mid Section */
+.img-mid-section{
+  height: 600px;
+  width: 100%;
+  padding: 60px 5vw;
+}
+
+.image-collage{
+  background: url(../img/bg-1.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.image-collection{
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  margin: auto;
+}
+
+.collage-img{
+  position: absolute;
+  object-fit: cover;
+  transition: .5s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 /40%);
+}
+
+.collage-img:nth-child(1){
+  width: 350px;
+  height: 350px;
+  top: 20px;
+  left: 40px;
+}
+
+.collage-img:nth-child(2){
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  left: 200px;
+}
+
+.collage-img:nth-child(3){
+  width: 250px;
+  height: 250px;
+  top: 100px;
+  left: 350px;
+}
+
+.collage-img:hover{
+  transform: translateY(-10px);
 }
