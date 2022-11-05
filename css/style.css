@@ -101,7 +101,7 @@ body {
   position: absolute;
   bottom: -11px;
   left: -11px;
-  background-color: #631F56;
+  background-color: #631f56;
   color: #f0f2f5;
   font-weight: 500;
   font-family: "cinzel", sans-serif;
@@ -109,12 +109,12 @@ body {
   border-radius: 50px/15px;
 }
 
-.cart-item-count:hover{
-  background-color: #6074A3;
+.cart-item-count:hover {
+  background-color: #6074a3;
   color: #f0f2f5;
   transition: 0.5s;
   opacity: 1;
-  border-radius: 20px/55px;;
+  border-radius: 20px/55px;
 }
 /* Best Selling Products Section */
 .best-selling-products {
@@ -179,33 +179,33 @@ body {
   opacity: 1;
 }
 /* Mid Section */
-.mid-section{
+.mid-section {
   height: 800px;
   width: 100%;
   padding: 40px 5vw;
 }
 
-.mid-container{
+.mid-container {
   position: relative;
   height: 100%;
   width: 100%;
   padding: 20px;
 }
 
-.section-bg{
+.section-bg {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius:  15px/50px;
+  border-radius: 15px/50px;
   /* border-top-left-radius: 15px;
   border-bottom-right-radius: 15px; */
   box-shadow: 2px 0px 5px 3px rgb(0 0 0 /40%);
 }
 
-.section-info{
+.section-info {
   background-color: #f0f2f5;
   height: 100%;
   width: 50%;
@@ -219,22 +219,22 @@ body {
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 /40%);
 }
 
-.section-title{
+.section-title {
   text-transform: capitalize;
   font-size: 100px;
   line-height: 120px;
   padding: 10px;
   margin: 10px;
   font-weight: lighter;
-  font-family: 'cinzel',  monospace;
+  font-family: "cinzel", monospace;
   text-shadow: 0 0 3px crimson, 0 0 5px #8080e7;
 }
 
-.section-title span{
+.section-title span {
   color: #2f757c;
 }
 
-.section-paragraph{
+.section-paragraph {
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
@@ -242,20 +242,20 @@ body {
 }
 
 /* Images Mid Section */
-.img-mid-section{
+.img-mid-section {
   height: 600px;
   width: 100%;
   padding: 60px 5vw;
 }
 
-.image-collage{
+.image-collage {
   background: url(../img/bg-3.png);
   height: 100%;
   width: 100%;
   background-size: cover;
 }
 
-.image-collection{
+.image-collection {
   position: relative;
   display: block;
   width: 50%;
@@ -264,78 +264,78 @@ body {
   margin: auto;
 }
 
-.collage-img{
+.collage-img {
   position: absolute;
   object-fit: cover;
-  transition: .5s;
+  transition: 0.5s;
   /* border-radius: 10px; */
   box-shadow: 0px 0px 5px 3px rgb(0 0 0 /40%);
 }
 
-.collage-img:nth-child(1){
+.collage-img:nth-child(1) {
   width: 350px;
   height: 350px;
   top: 20px;
   left: 40px;
 }
 
-.collage-img:nth-child(2){
+.collage-img:nth-child(2) {
   width: 250px;
   height: 250px;
   top: 200px;
   left: 200px;
 }
 
-.collage-img:nth-child(3){
+.collage-img:nth-child(3) {
   width: 250px;
   height: 250px;
   top: 100px;
   left: 350px;
 }
 
-.collage-img:hover{
+.collage-img:hover {
   transform: translateY(-10px);
 }
 
 /* Review Section */
-.review-section{
+.review-section {
   padding: 50px 5vw;
   margin-bottom: 30px;
 }
 
-.review-title{
+.review-title {
   text-transform: capitalize;
   text-shadow: 2px 2px 5px black;
 }
 
-.review-container{
+.review-container {
   margin: 50px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
 }
 
-.review-card{
+.review-card {
   width: 100%;
   height: auto;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
 }
 
-.user-display-picture{
+.user-display-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: relative;
 }
 
-.user-display-picture img{
+.user-display-picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.user-display-picture::before{
-  content: '';
+.user-display-picture::before {
+  content: "";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -345,135 +345,80 @@ body {
   border-radius: 50%;
 }
 
-.user-display-picture::after{
+.user-display-picture::after {
   content: attr(data-rating);
   background-color: cornsilk;
-  color: #631F56;
+  color: #631f56;
   padding: 5px 15px;
   border-radius: 30px;
   position: absolute;
   right: -20px;
   bottom: 0;
   font-weight: bolder;
-  font-family: 'cinzel', serif;
+  font-family: "cinzel", serif;
 }
 
-.review-card-title{
+.review-card-title {
   text-transform: capitalize;
   margin: 20px 0;
   font-size: 20px;
   line-height: 25px;
 }
-
-.read-more-container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.container{
-  line-height: 1.4rem;
-  margin: 20px 0;
-  width: 90%;
-  height: 100%;
-  text-align: justify;
-}
-
-.read-more-text{
+/* #more {
   display: none;
 }
-
-.read-more-text--show{
-  display: inline;
-}
-
-.show-more-btn{
-  color: #06369B;
-  font-weight: bolder;
+#myBtn {
+  border: none;
+  font-size: 15px;
   cursor: pointer;
+  font-family: "lato", serif;
+  font-weight: bolder;
+  padding: 5px;
+  color: #06369b;
 }
+.review-para {
+  width: 90%;
+  line-height: 1.4rem;
+  margin: 5px 0;
+  position: relative;
+  text-align: justify;
+} */
+
 /* show more 1 */
-.read-more-container1{
+/* .read-more-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.container1{
+.container {
   line-height: 1.4rem;
   margin: 20px 0;
   width: 90%;
   height: 100%;
-  text-align: justify;
+  text-align: center;
 }
 
-.read-more-text1{
+.read-more-text {
   display: none;
 }
 
-.read-more-text--show1{
+.read-more-text--show {
   display: inline;
-}
+} */
 
-.show-more-btn1{
-  color: #06369B;
+.show-more-btn {
+  color: #6074a3;
   font-weight: bolder;
   cursor: pointer;
-}
-/* show more 2 */
-.read-more-container2{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  font-size: 13px;
 }
 
-.container2{
-  line-height: 1.4rem;
-  margin: 20px 0;
-  width: 90%;
-  height: 100%;
-  text-align: justify;
+/* Third and fourth review paragraph */
+.post{
+    width: 90%;
+    text-align: justify;
 }
-
-.read-more-text2{
+.hide{
   display: none;
-}
-
-.read-more-text--show2{
-  display: inline;
-}
-
-.show-more-btn2{
-  color: #06369B;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-/* show more 3 */
-.read-more-container3{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.container3{
-  line-height: 1.4rem;
-  margin: 20px 0;
-  width: 90%;
-  height: 100%;
-  text-align: justify;
-}
-
-.read-more-text3{
-  display: none;
-}
-
-.read-more-text--show3{
-  display: inline;
-}
-
-.show-more-btn3{
-  color: #06369B;
-  font-weight: bolder;
-  cursor: pointer;
 }
