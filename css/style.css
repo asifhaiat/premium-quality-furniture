@@ -13,6 +13,11 @@
 body {
   font-family: "cinzel", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header Section */
 .header-section {
   background: url(../img/header.png);
@@ -49,12 +54,13 @@ body {
 }
 
 .navbar.bg {
-  background-color: #f0f2f5;
+  background-color: #280D25;
+  border-radius: 2px;
   box-shadow: 0px 0px 5px 2px rgb(0 0 0 /40);
 }
 
 .navbar.bg .link {
-  color: #1d2e48;
+  color: #f0f2f5;
   opacity: 0.5;
 }
 
@@ -498,4 +504,36 @@ body {
   text-transform: capitalize;
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
+}
+
+/* Back to Top Scroll */
+.to-top {
+  background: #280D25;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: cornsilk;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 5px 1px rgb(0 0 0 /40);
+}
+
+.to-top:hover{
+  background-color: #1d2e48;
+  transition: 0.5s;
+}
+
+.to-top.active {
+  bottom: 25px;
+  pointer-events: auto;
+  opacity: 1;
 }
