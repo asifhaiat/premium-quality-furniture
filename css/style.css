@@ -2,7 +2,7 @@
 #D9FEFC       #9CFE76            #125052       #542543
 #9FDF65       #8A5FAB            #D299B4       #2807C0
 #1AD4C6       #2563AB            #F2608F       #64849A
-#0BA9F3       #8DAEB2            #CAE2D2       #7DDA1F
+#0BA9F3       #8DAEB2            #CAE2D2       #7DDA1F    #1D2E48
 */
 * {
   margin: 0;
@@ -48,6 +48,16 @@ body {
   transition: 0.5s;
 }
 
+.navbar.bg {
+  background-color: #f0f2f5;
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 /40);
+}
+
+.navbar.bg .link {
+  color: #1d2e48;
+  opacity: 0.5;
+}
+
 .links-container {
   display: flex;
   align-items: center;
@@ -69,7 +79,9 @@ body {
 }
 
 .link.active,
-.link:hover {
+.link:hover,
+.navbar.bg .link:hover,
+.navbar.bg .link.active {
   opacity: 1;
 }
 
@@ -261,7 +273,7 @@ body {
   width: 50%;
   height: 100%;
   background: #fff;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .collage-img {
@@ -408,17 +420,82 @@ body {
 } */
 
 .show-more-btn {
-  color: #6074a3;
+  color: #1d2e48;
+  text-shadow: 1px 2px 6px #631f56, 1px 2px 4px #f0f2f5;
   font-weight: bolder;
   cursor: pointer;
   font-size: 13px;
 }
 
 /* Third and fourth review paragraph */
-.post{
-    width: 90%;
-    text-align: justify;
+.post {
+  width: 90%;
+  text-align: justify;
 }
-.hide{
+.hide {
   display: none;
+}
+
+/* End Section */
+.end-section {
+  height: 800px;
+  width: 100%;
+  padding: 40px 5vw;
+}
+
+.end-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 30px;
+}
+
+.end-img-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 0px 3px 0px rgb(0 0 0 /40);
+}
+
+.end-info {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(241, 239, 230);
+  text-align: center;
+  padding: 30px;
+  margin-right: auto;
+  display: block;
+  border-radius: 50px/ 15px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 /40%);
+}
+
+.end-title {
+  font-size: 100px;
+  line-height: 100px;
+  color: #1d2e48;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-family: "cinzel", monospace;
+  text-shadow: 0 0 3px crimson, 0 0 5px #1d2e48;
+}
+
+.end-order {
+  color: #631f56;
+}
+
+.end-paragraph {
+  font-size: 20px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
 }
